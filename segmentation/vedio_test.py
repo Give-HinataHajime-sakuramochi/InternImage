@@ -242,15 +242,14 @@ def main():
         model.CLASSES = get_classes(args.palette)
 
     # test a single image
-    img = cv2.imread(args.img)
-    edge_img= pipline(model, img)
-    plt.figure(figsize=(10, 5))
-    plt.imshow(edge_img)
-    plt.savefig("output1.jpg")
+    #img = cv2.imread(args.img)
+    #edge_img= pipline(model, img)
+    #plt.figure(figsize=(10, 5))
+    #plt.imshow(edge_img)
+    #plt.savefig("output1.jpg")
     
     # test 
-    '''
-    cap = cv2.VideoCapture("image/vediotest3.mp4")
+    cap = cv2.VideoCapture("image/vediotest3_Trim1.mp4")
     video_w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) 
     video_h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) 
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -267,7 +266,6 @@ def main():
 
     cap.release()
     out.release()
-    '''
     print("OK")
 
 if __name__ == '__main__':
