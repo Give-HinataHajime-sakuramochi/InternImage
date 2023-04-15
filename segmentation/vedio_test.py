@@ -249,7 +249,7 @@ def main():
     #plt.savefig("output1.jpg")
     
     # test 
-    cap = cv2.VideoCapture("image/vediotest3_Trim1.mp4")
+    cap = cv2.VideoCapture("image/30427_hd_Trim_Trim.mp4")
     video_w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) 
     video_h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) 
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
