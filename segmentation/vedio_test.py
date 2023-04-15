@@ -169,7 +169,7 @@ def pipline(model, img):
     ## 輪廓平滑化
     approx=cv2.approxPolyDP(canny_edge, 15, False);
     edges = np.zeros_like(segment_image)
-    cv2.drawContours(edges, [approx], 0, 255, 2, 8);
+    #cv2.drawContours(edges, [approx], 0, 255, 2, 8);
 
     #找出縱軸最高點
     #res = np.where(edges == 255)
