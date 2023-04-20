@@ -179,7 +179,7 @@ def pipline(model, img):
     cv2.putText(edges_img, str(angle), (50, 100), cv2.FONT_HERSHEY_DUPLEX, 2, (0, 255, 255), 2)
     left = (left_x_min, left_y_min,left_x_max,left_y_max)
     right=(right_x_min,right_y_min,right_x_max,right_y_max)
-    top=(top_point[0],top_point[1])
+    top=(float(top_point[0]),float(top_point[1]))
     # 檢查左右線
     #cv2.line(edges_img, (int(left_x_min), int(left_y_min)), (int(left_x_max), int(left_y_max)), (0, 0, 255), 2)
     #cv2.line(edges_img, (int(right_x_min), int(right_y_min)), (int(right_x_max), int(right_y_max)), (0, 0, 255), 2)
